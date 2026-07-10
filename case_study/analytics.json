@@ -1,0 +1,257 @@
+{
+  "generated_at": "2026-07-10T17:00:01.013425+00:00",
+  "source_csv": "data\\results.csv",
+  "total_apps": 100,
+  "insight_explanations": {
+    "authentication_distribution": "Shows which authentication patterns appear most often across the researched apps. This helps identify the dominant integration style.",
+    "self_serve_vs_gated": "Shows how many products are immediately usable versus sales-led or access-restricted. This is a quick signal for integration friction.",
+    "api_type_distribution": "Compares REST, GraphQL, and other API styles. This helps the dashboard show which API styles are most common.",
+    "mcp_availability": "Shows whether the source material explicitly mentions MCP or Model Context Protocol. This indicates whether a native MCP integration already exists.",
+    "category_distribution": "Shows which SaaS categories appear most frequently in the dataset.",
+    "most_common_blockers": "Lists the top reasons apps are hard to integrate. This helps prioritize product and tooling work.",
+    "buildability_percentage": "Shows the share of apps that are realistically buildable or partially buildable from the available public evidence.",
+    "easy_win_categories": "Highlights categories with the highest buildability rate. These are the best candidates for quick wins.",
+    "difficult_integration_categories": "Highlights categories with the lowest buildability rate. These are the hardest areas to automate or integrate."
+  },
+  "insights": {
+    "authentication_distribution": [
+      {
+        "label": "Unknown",
+        "count": 41,
+        "percentage": 41.0
+      },
+      {
+        "label": "API key",
+        "count": 18,
+        "percentage": 18.0
+      },
+      {
+        "label": "SSO",
+        "count": 14,
+        "percentage": 14.0
+      },
+      {
+        "label": "API key, SSO",
+        "count": 14,
+        "percentage": 14.0
+      },
+      {
+        "label": "API key, OAuth, SSO",
+        "count": 5,
+        "percentage": 5.0
+      },
+      {
+        "label": "API key, Bearer token",
+        "count": 3,
+        "percentage": 3.0
+      },
+      {
+        "label": "API key, Bearer token, SSO",
+        "count": 2,
+        "percentage": 2.0
+      },
+      {
+        "label": "OAuth, SSO",
+        "count": 1,
+        "percentage": 1.0
+      },
+      {
+        "label": "API key, OAuth",
+        "count": 1,
+        "percentage": 1.0
+      },
+      {
+        "label": "API key, Bearer token, OAuth, SSO",
+        "count": 1,
+        "percentage": 1.0
+      }
+    ],
+    "self_serve_vs_gated": [
+      {
+        "label": "Self Serve",
+        "count": 54,
+        "percentage": 54.0
+      },
+      {
+        "label": "Gated",
+        "count": 46,
+        "percentage": 46.0
+      }
+    ],
+    "api_type_distribution": [
+      {
+        "label": "Others",
+        "count": 66,
+        "percentage": 66.0
+      },
+      {
+        "label": "REST",
+        "count": 32,
+        "percentage": 32.0
+      },
+      {
+        "label": "GraphQL",
+        "count": 2,
+        "percentage": 2.0
+      }
+    ],
+    "mcp_availability": [
+      {
+        "label": "No",
+        "count": 51,
+        "percentage": 51.0
+      },
+      {
+        "label": "Yes",
+        "count": 49,
+        "percentage": 49.0
+      }
+    ],
+    "category_distribution": [
+      {
+        "label": "CRM and Sales",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "Support and Helpdesk",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "Communications and Messaging",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "Marketing Ads Email and Social",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "Ecommerce",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "Data SEO and Scraping",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "Developer Infra and Data Platforms",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "Productivity and Project Management",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "Finance and Fintech",
+        "count": 10,
+        "percentage": 10.0
+      },
+      {
+        "label": "AI Research and Media-native",
+        "count": 10,
+        "percentage": 10.0
+      }
+    ],
+    "most_common_blockers": [
+      {
+        "label": "Access appears gated behind a sales or demo flow.",
+        "count": 46,
+        "percentage": 46.0
+      },
+      {
+        "label": "No public API or API documentation was found in the collected evidence.",
+        "count": 36,
+        "percentage": 36.0
+      },
+      {
+        "label": "No obvious blocker found in the collected evidence.",
+        "count": 15,
+        "percentage": 15.0
+      },
+      {
+        "label": "Authentication requirements are not clearly documented.",
+        "count": 3,
+        "percentage": 3.0
+      }
+    ],
+    "buildability_percentage": {
+      "buildable": 15,
+      "partially_buildable": 49,
+      "blocked": 36,
+      "buildable_percentage": 15.0,
+      "partially_buildable_percentage": 49.0,
+      "buildability_percentage": 64.0
+    },
+    "easy_win_categories": [
+      {
+        "category": "Data SEO and Scraping",
+        "total_apps": 10,
+        "buildable_apps": 6,
+        "buildable_rate": 60.0
+      },
+      {
+        "category": "Developer Infra and Data Platforms",
+        "total_apps": 10,
+        "buildable_apps": 3,
+        "buildable_rate": 30.0
+      },
+      {
+        "category": "Communications and Messaging",
+        "total_apps": 10,
+        "buildable_apps": 2,
+        "buildable_rate": 20.0
+      },
+      {
+        "category": "AI Research and Media-native",
+        "total_apps": 10,
+        "buildable_apps": 2,
+        "buildable_rate": 20.0
+      },
+      {
+        "category": "Ecommerce",
+        "total_apps": 10,
+        "buildable_apps": 1,
+        "buildable_rate": 10.0
+      }
+    ],
+    "difficult_integration_categories": [
+      {
+        "category": "Finance and Fintech",
+        "total_apps": 10,
+        "buildable_apps": 0,
+        "buildable_rate": 0.0
+      },
+      {
+        "category": "Marketing Ads Email and Social",
+        "total_apps": 10,
+        "buildable_apps": 0,
+        "buildable_rate": 0.0
+      },
+      {
+        "category": "Productivity and Project Management",
+        "total_apps": 10,
+        "buildable_apps": 0,
+        "buildable_rate": 0.0
+      },
+      {
+        "category": "Support and Helpdesk",
+        "total_apps": 10,
+        "buildable_apps": 0,
+        "buildable_rate": 0.0
+      },
+      {
+        "category": "CRM and Sales",
+        "total_apps": 10,
+        "buildable_apps": 1,
+        "buildable_rate": 10.0
+      }
+    ]
+  }
+}
