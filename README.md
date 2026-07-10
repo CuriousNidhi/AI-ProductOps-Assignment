@@ -2,6 +2,18 @@
 
 This repository is the Phase 1 scaffold for an AI research agent that can research SaaS products, classify their API and authentication surface, verify a random sample against official documentation, and export the findings to CSV.
 
+# AI Product Ops Assignment
+
+## Live Demo
+https://ai-product-ops-assignment-te5y.vercel.app/
+
+## GitHub Repository
+https://github.com/CuriousNidhi/AI-ProductOps-Assignment
+
+## Overview
+
+This repository contains an AI-powered research agent that analyzes 100 SaaS applications, verifies the collected data, generates analytics, and presents the findings in an interactive HTML dashboard.
+
 ## What this project does
 
 The first version is designed to:
@@ -140,3 +152,41 @@ This will:
 - Buildability percentage: the share of apps that look buildable or partially buildable from the public evidence.
 - Easy-win categories: categories with the highest buildable rate.
 - Difficult integration categories: categories with the lowest buildable rate.
+
+## Run the Project
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run research:
+
+```bash
+python research_agent/main.py research
+```
+
+Run verification:
+
+```bash
+python research_agent/main.py verify
+```
+
+Run analytics:
+
+```bash
+python research_agent/main.py analytics
+```
+
+View the HTML dashboard:
+
+```bash
+python -m http.server 8000
+```
+
+Open:
+
+```
+http://localhost:8000/case_study/index.html
+```
